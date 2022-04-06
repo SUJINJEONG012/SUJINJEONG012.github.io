@@ -1,0 +1,127 @@
+#wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+.main_header{
+    position: relative;
+
+background-color:transparent;
+z-index: 200;
+padding: 2.5rem 0;
+width: 100%;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.header-inner .logo a{
+    font-size:45px;
+}
+
+.header-toggle{
+    width:24px;
+    height: 24px;
+    margin-right: 4px;
+}
+
+.header-toggle a{
+position: relative;
+display: block;
+width: 100%;
+height: 100%;
+}
+
+
+.header-toggle a > span{
+    position: absolute;
+    width:100%;
+    height: 2px;
+    border-top:1px solid #fff;
+    transition: .3s;
+}
+    
+.header-toggle a > span:nth-child(1){
+    top:4px;
+}
+
+.header-toggle a > span:nth-child(2){
+    top:10px;
+}
+.header-toggle a > span:nth-child(3){
+    bottom:5px;
+}
+
+.header-over{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* background-color: yellow; */
+    z-index: 200;
+  
+}
+.header-over .bg-area{
+    position: relative;
+}
+.header-over .bg-area::before{
+  content:"";
+  position: absolute;
+  top:0;
+  right:0;
+  width:100%;
+  height: 100%;
+  background-color: green;   
+}
+.header-over .bg-area::after{
+content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+.header-over nav{
+    position: relative;
+}
+
+.header-over nav ul{
+    
+}
+
+.header-over nav ul li{
+    
+}
+
+
+
+html.active {
+    overflow: hidden;
+}
+
+.main_header.active{
+    background-color: yellow;
+}
+
+.header-over.active{
+    display: block;
+}
+
+.main_header.active .header-toggle > a > span {
+    border-top-color: #fff;
+}
+.main_header.active .header-toggle > a > span:nth-child(1) {
+    top: -10px; transform: translateY(20px) rotate(-45deg);
+}
+.main_header.active .header-toggle > a > span:nth-child(2) {
+    opacity: 0;}
+.main_header.active .header-toggle > a > span:nth-child(3) {bottom: -9px; transform: translateY(-20px) rotate(45deg)}
