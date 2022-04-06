@@ -1,4 +1,26 @@
+@charset "utf-8";
+* {
+    box-sizing: border-box;
+}
 body{
     background-color: #000;
     color: #fff;
+    height: 1000vh;
+}
+
+
+.inner{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #ee6c4d;
+    transform: translate(-50%, -50%);
 }
