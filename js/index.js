@@ -18,7 +18,7 @@ toggleBtn.addEventListener('click', () =>{
 
 //타이밍효과
 
-const content = '안녕하세요. \n 프론트개발을 하고 싶은 퍼블리셔 정수진입니다.';
+const content = '안녕하세요. \n 웹퍼블리셔 정수진입니다.';
 const text = document.querySelector('.text');
 let i = 0;
 
