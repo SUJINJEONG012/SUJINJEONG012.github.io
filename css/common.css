@@ -28,8 +28,7 @@ body ::selection {background: #d6005e;color: #fff}
 .inner{
     max-width: 1488px;
     margin: 0 auto;
-    /* margin-right: 50px;
-    margin-left: 50px; */
+    padding: 0 calc(100vw*(100/1400));
 }
 
 .circle {

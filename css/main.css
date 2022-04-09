@@ -97,15 +97,13 @@
 
 .process-line{
   margin-bottom: 80px;
-  /* width: calc(100% - 48px); */
   font-size: 16px;
   letter-spacing: -0.28px;
   display: block;
   border-bottom: 1px solid #181822;
-  margin: 0 auto 20px auto;
-  padding: 0 0 13px 0; 
-  /* margin-left: 24px; */
+  padding-bottom: 15px;
 
+  margin-bottom: 7rem;
   display: flex;
   justify-content: space-between;
 
@@ -115,11 +113,12 @@
   /***************************** provision **************************/
   .provision{
     position: relative;
-      background-color:#fff24f;
+      /* background-color:#fff24f; */
+      background-color: #000;
       
     }
     .provision *{
-      color: #191919;
+      color: #fff;
     }
   
 
@@ -130,7 +129,7 @@
     right: 50%;
     width: 100%;
     height: 100%;
-    background-color: #fff24f;
+    background-color: #000;
     z-index: -1;
   }
   .provision::after{
@@ -140,7 +139,7 @@
     left: 50%;
     width: 100%;
     height: 100%;
-    background-color: #fff24f;
+    background-color: #000;
     z-index: -1;
   }
 
@@ -148,15 +147,14 @@
     position: relative;
      display: flex;
 
-    
+     width: calc(75% - 42px);
+     
+     margin-left: 24px;
+     margin-left: calc(25% - 70px);
 
   }
   .provision .title-wrap .tit{
-    width: calc(75% - 42px);
-  
-    margin-left: 24px;
-    margin-left: calc(25% - 30px + 48px);
-
+   
   }
   .provision .title-wrap .tit h2{
     font-size:30px;
@@ -166,7 +164,6 @@
     transform: rotate(-90deg);
     display: inline-block;
     transform: rotate(-180deg);
-    transform-origin: 0 0;
     font-size: 50px;
     
 }
@@ -175,23 +172,23 @@
   transform: rotate(-90deg);
   display: inline-block;
   transform: rotate(-0);
-  transform-origin: 0 0;
   font-size: 50px; 
 }
-.provision .tagline{
-position: absolute;
-top: 90%;
-left:-9%;
-transform: translateY(-50%);
-font-size: 12px;
-transform: rotate(-90deg);
-transform-origin: 0 0;
-padding-top: 4px;
-}
+
+.provision .title-wrap .tagline{
+  position: absolute;
+  top: 90%;
+  left:-40%;
+  transform: translateY(-50%);
+  font-size: 12px;
+  transform: rotate(-90deg);
+  padding-top: 4px;
+  }
+
 
 .provision-kind {
     background: transparent;
-    margin: 100px auto;
+    margin-bottom: 20rem;
 }
 .provision-kind-list{
   display: flex;
@@ -210,6 +207,7 @@ padding-top: 4px;
 .provision-kind-list h2{
   font-size: 30px;
   min-width: 280px;
+  
 }
 /* .provision-kind-list h2::after{
   content: "";
@@ -219,6 +217,7 @@ padding-top: 4px;
   background-color: #1a1912;
   margin: 40px 0;
 } */
+
 .provision-kind-list .provision-kind-item .provision-kind-item-area{
 
 }
@@ -262,6 +261,22 @@ background: #f4f4f4;
 .projects *{
     color:#191919;
 }
+
+.projects .title-wrap{
+
+}
+.projects .title-wrap h2 > span{
+  transform: rotate(-90deg);
+  display: inline-block;
+  transform: rotate(-0);
+  font-size: 50px; 
+  
+}
+.projects .title-wrap h2{
+  font-size:120px;
+ }
+
+
 .projects-list{
   display: flex;
   flex-wrap: wrap;
