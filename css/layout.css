@@ -17,7 +17,7 @@
 .header-inner {
     position: relative;
     max-width: 1400px;
-    margin: 2rem auto;
+    margin: 0 auto;
     height: 80px;
     display: flex;
     justify-content: space-between;
@@ -36,7 +36,7 @@
 
 
 .header-inner .logo a{
-    font-size:45px;
+    font-size:30px;
 }
 
 .header-toggle{
@@ -76,9 +76,8 @@ height: 100%;
     display: none;
     z-index: 500;
     position: fixed;
-    top: 9rem;
+    top: 0;
     left: 0;
-    right: 0;
     width: 100%;
     height: 100%;
     transition: all 0.2s ease;
@@ -105,7 +104,7 @@ height: 100%;
     width: 100%;
     height: 100%;
     transition: background-color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    background: #3f3f35;
+    background: #000;
     background-position: 90% 90%;
     width: 100%;
     margin-right: 10%;
@@ -115,8 +114,12 @@ height: 100%;
 
 
 .header-over .open-nav-wrap {
+position: relative;
+max-width: 1400px;
+margin: 0 auto;
+padding-top: 8rem;
 
-margin: 0 auto;max-width: 1400px;position: relative;}
+}
 
 .header-over .open-nav-wrap .nav-inner{
   
@@ -125,7 +128,6 @@ margin: 0 auto;max-width: 1400px;position: relative;}
     flex-direction: column;
     
     padding: 9vh 30px 50px;
-    
     height: calc(100% - 58px);
     max-width: 1400px;
     margin: 0 auto;
@@ -165,9 +167,12 @@ position: absolute;
     display: block;
     width: 0;
     height: 2px;
-    background-color: #33bc2d;
+    background-color: #fff;
     transition: width .3s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
+
+
+
 .menu-list:hover > a::after {width: calc(100% + 2px);}
 
 
@@ -207,15 +212,12 @@ position: absolute;
 
 
 
-
-
-
 html.active {
-    overflow: hidden;
+    
 }
 
 .main_header.active{
-    background-color: #3f3f35;
+    background-color: #000;
 }
 
 .header-over.active{

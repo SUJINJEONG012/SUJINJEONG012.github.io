@@ -26,7 +26,8 @@ time, mark, audio, video {
 	font: inherit;
 	font-weight: 300;
 	vertical-align: baseline;
-	line-height: 1.45;
+	line-height: 1.25;
+	word-break: keep-all;
 	
 }
 /* HTML5 display-role reset for older browsers */

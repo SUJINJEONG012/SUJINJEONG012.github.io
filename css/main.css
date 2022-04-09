@@ -100,7 +100,6 @@
   font-size: 16px;
   letter-spacing: -0.28px;
   display: block;
-  border-bottom: 1px solid #181822;
   padding-bottom: 15px;
 
   margin-bottom: 7rem;
@@ -108,6 +107,7 @@
   justify-content: space-between;
 
 }
+
 
 
   /***************************** provision **************************/
@@ -121,6 +121,9 @@
       color: #fff;
     }
   
+  .provision .process-line{
+    border-bottom: 1px solid #fff;
+  }
 
   .provision::before{
     content:"";
@@ -144,11 +147,9 @@
   }
 
   .provision .title-wrap{
-    position: relative;
+     position: relative;
      display: flex;
-
      width: calc(75% - 42px);
-     
      margin-left: 24px;
      margin-left: calc(25% - 70px);
 
@@ -159,6 +160,18 @@
   .provision .title-wrap .tit h2{
     font-size:30px;
   }
+  .provision .title-wrap .tagline{
+    position: absolute;
+    top: 90%;
+    left:-40%;
+    transform: translateY(-50%);
+    font-size: 12px;
+    transform: rotate(-90deg);
+    padding-top: 4px;
+    letter-spacing: 0.09em;
+    border-bottom: 2px solid #fff;
+    padding: 0 0 10px 0;
+    }
 
   .provision .title-wrap span.first {
     transform: rotate(-90deg);
@@ -175,15 +188,7 @@
   font-size: 50px; 
 }
 
-.provision .title-wrap .tagline{
-  position: absolute;
-  top: 90%;
-  left:-40%;
-  transform: translateY(-50%);
-  font-size: 12px;
-  transform: rotate(-90deg);
-  padding-top: 4px;
-  }
+
 
 
 .provision-kind {
@@ -262,35 +267,82 @@ background: #f4f4f4;
     color:#191919;
 }
 
+.projects .process-line{
+  border-bottom: 1px solid #181822;  
+}
 .projects .title-wrap{
+  margin-bottom: 5rem;
+  position: relative;
+ 
+}
 
-}
-.projects .title-wrap h2 > span{
-  transform: rotate(-90deg);
-  display: inline-block;
-  transform: rotate(-0);
-  font-size: 50px; 
-  
-}
+
+
 .projects .title-wrap h2{
   font-size:120px;
+  position: relative;
  }
 
+ .projects .title-wrap > span{
+
+  display: block;
+  position: absolute;
+  top: -60%;
+  transform: scale(-1);
+  font-size: 105px; 
+  
+}
+
+ .projects .title-wrap > p{
+  font-size: 30px;
+  margin: 30px auto;
+
+}
+.projects .title-wrap .tagline{
+  position: absolute;
+  top: 90%;
+  left:-10%;
+  transform: translateY(-50%);
+  font-size: 12px;
+  transform: rotate(-90deg);
+  padding-top: 4px;
+  }
+
+
+ @media screen and (min-width: 768px){
+  .projects .title-wrap h2{
+    font-size:75px;
+    margin-bottom: 120px;
+   }
+
+ }
 
 .projects-list{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
+
+
 .projects-item {
   position: relative;
-  width:300px;
+  width:47%;
+  /* height: 400px; */
   background: no-repeat center center;
   background-size: cover;
   overflow: hidden;
+  margin: 1%;
   
 }
 
+
+  
+
+
+.projects-item picture img{
+width: 100%;
+    height: auto;
+}
 
 
 .projects-item a {
@@ -381,4 +433,78 @@ background: #f4f4f4;
     -ms-transform: rotate(-45deg);
     transition: 0.2s;
     -webkit-transition: 0.2s;
+}
+
+
+
+/***************************** various **************************/
+.various{
+position: relative;
+background-color:#181822;
+}
+
+.various *{
+  color: #fff;
+}
+
+.various .process-line{
+  border-bottom: 1px solid #fff;
+}
+
+
+.various::before{
+  content: "";
+  position: absolute;
+  top:0;
+  right: 50%;
+  width:100%;
+  height: 100%;
+  background-color: #181822;
+  z-index: -1;
+}
+
+.various::after{
+  content: "";
+  position: absolute;
+  top:0;
+  left:50%;
+  width:100%;
+  height: 100%;
+  background-color: #181822;
+  z-index: -1;
+}
+
+.various .title-wrap h2 {
+  font-size: 120px;
+  position: relative;
+}
+
+.various .title-wrap .title-middle{
+  width: calc(75% - 42px);
+  margin-left: 24px;
+  margin-left: calc(25% - 30px + 48px);
+  margin-bottom: 80px;
+}
+
+.various .title-wrap h2{
+  font-size: 75px;
+    margin-bottom: 120px;
+    width: calc(83.33333% - 44px);
+    
+    margin-left: 24px;
+}
+
+/* .various .img-wrap{
+  position: relative;
+} */
+
+.various picture{
+  position: absolute;
+    top: 12%;
+    left: 58%;
+    width: 100%;
+    max-width: 200px;
+    top: 46%;
+    max-width: 250px;
+    left: 70%;
 }
