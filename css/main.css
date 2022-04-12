@@ -17,6 +17,19 @@
     min-height: 300px;
 }
 
+.intro .hello{
+  
+  font-size:50px;
+  display: inline-block;
+  -webkit-animation: shake 0.4s infinite alternate;
+  -moz-animation: shake 0.4s infinite alternate;
+  -o-animation: shake 0.4s infinite alternate;
+  animation: shake 0.4s infinite alternate;
+  -ms-transform-origin: 90% 100%;
+  -webkit-transform-origin: 90% 100%;
+  transform-origin: 90% 100%;
+}
+
 .intro .text{
     
     font-size:21px;
