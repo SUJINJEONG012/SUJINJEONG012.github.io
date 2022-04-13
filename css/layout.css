@@ -149,9 +149,8 @@ padding-top: 8rem;
 }
 
 
-.menu-list {
- 
-    padding: 2rem 0;
+.menu-list { 
+    padding-bottom: 4rem;
 }
 
 .menu-list a{
@@ -200,17 +199,27 @@ position: absolute;
 .header-over .open-nav-wrap .nav-inner .info-wrap{
     flex: 0 0 50%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     max-width: 50%;
     margin-top: 0;
     padding-bottom: 30px;
     
 }
+
+@media screen and (min-width:992px){
+    .header-over .open-nav-wrap .nav-inner{flex-direction: row;}
+    .header-over .open-nav-wrap .nav-inner .info-wrap{justify-content: flex-end;}
+}
+
+
 .header-over .open-nav-wrap .nav-inner .info-wrap .contact-list i{
+    display: inline-block;
     font-size: 35px;
     cursor: pointer;
     vertical-align: middle;
     padding-right: 20px;
+    width: 45px;
+    
 }
 
 
