@@ -208,7 +208,7 @@ position: absolute;
 
 @media screen and (min-width:992px){
     .header-over .open-nav-wrap .nav-inner{flex-direction: row;}
-    .header-over .open-nav-wrap .nav-inner .info-wrap{justify-content: flex-end;}
+    .header-over .open-nav-wrap .nav-inner .info-wrap{justify-content: center;}
 }
 
 
