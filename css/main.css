@@ -487,6 +487,7 @@ background-color:#181822;
 
 .various .title-wrap h2 {
   position: relative;
+
 }
 
 .various .various-small .test{
@@ -543,6 +544,8 @@ position: absolute;
 }
 .various-list-wrap .title-wrap{
   width: calc(100% - 40%);
+  margin: 10rem 0;
+  position: relative;
 }
 
 
