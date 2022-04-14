@@ -137,7 +137,11 @@ padding-top: 8rem;
 /* background: #000; */
 }
 
-
+@media screen and (min-width: 1500px){
+    .header-over .open-nav-wrap .nav-inner{
+        padding-left:0;
+    }
+}
 @media screen and (min-width: 1024px){
 
     .header-over .open-nav-wrap .nav-inner{
