@@ -3,9 +3,12 @@
 .content-container{
     position: relative;
     width: 100%;
+    background: #fcfcfc;
+    padding-top: 80px;
 }
 
-.content-container .content-innder{
+.content-container .content-inner{
     max-width: 1400px;
     margin: 0 auto;
 }
+
