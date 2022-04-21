@@ -5,7 +5,8 @@
 .container {
     overflow: hidden;
     position: relative;
-    padding-top: 15rem; padding-bottom: 150px;
+    padding-top: 15rem; 
+    padding-bottom: 150px;
 }
 
 .intro-wrap{
