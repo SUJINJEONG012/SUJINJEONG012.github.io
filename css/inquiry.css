@@ -1,14 +1,83 @@
 @charset "utf-8";
 
-.content-container{
+
+
+
+input[type="text"], 
+input[type="password"], 
+input[type="search"], 
+input[type="number"], 
+input[type="date"], 
+input[type="datetime"], 
+input[type="email"], 
+input[type="tel"] {
+    padding: 0px;
+    border: 0px;
+    height: 36px;
+    padding-top: 5px;
+    background:transparent;
+    vertical-align: middle;
+    color: #b9b9b9;
+    font-size: 15px;
+}
+
+input[type=text], input[type=tel], input[type=email], input[type=password], input[type=url], input[type=number], input[type=search], textarea {
+    -webkit-appearance: none;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Pretendard', sans-serif;
+}
+
+input, textarea, select {
+    vertical-align: middle;
+    font-size: 13px;
+    line-height: 140%;
+    background-color: transparent;
+    font-family: 'Noto Sans KR','돋음', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+}
+
+
+
+.regGroup{
+
+}
+.field{
     position: relative;
+display: block;
     width: 100%;
-    background: #fcfcfc;
-    padding-top: 80px;
+    height: 48rem;
+    margin: 0;
+    padding: 12rem 0;
+    font-size: 16rem;
+    line-height: 1.86;
+    font-weight: 400;
+    border: solid #ddd;
+    border-width: 0 0 2rem 0;
+    border-radius: 0;
+    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: border .3s;
+    transition: border .3s;
 }
-
-.content-container .content-inner{
-    max-width: 1400px;
-    margin: 0 auto;
+.field::before,.field::after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    border-radius: 50px;
+    transition: ease-in-out 0.6s all;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
+.field::after{
+background-image: linear-gradient(90deg, #52616b, #c9d6df);
+width: 0%;
+}
