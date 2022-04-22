@@ -44,6 +44,10 @@ ol, ul {
 blockquote, q {
 	quotes: none;
 }
+button{
+	border:0;
+	border-radius: 0;
+}
 a{
     text-decoration: none; 
     outline: none;
