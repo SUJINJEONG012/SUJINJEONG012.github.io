@@ -23,13 +23,7 @@ input[type=text], input[type=tel], input[type=email], input[type=password], inpu
 
 
 /* 자동완성 */
-input:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0 1000px transparent inset;
-  }
-  input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active {
-    transition: background-color 5000s ease-in-out 0s;
-    color: #fff;
-  }
+
 
 input, textarea, select {
   
@@ -55,6 +49,7 @@ input, textarea, select {
 }
 .register-wrap {
     width: 50%;
+    padding-top: 8rem;
 }
 .register-wrap .regGroup{
 margin-bottom: 2rem;
@@ -110,3 +105,18 @@ margin-bottom: 2rem;
 
  /*=============문의하기 버튼=============*/
 
+.btn-wrap{
+    position: relative;
+   text-align: center;
+   
+}
+
+.btn-wrap > button{
+    color: #fff;
+    width: 100%;
+    border: 1px solid #eee;
+    height: 70px;
+    cursor: pointer;
+    background: transparent;
+}
+  
