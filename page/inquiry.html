@@ -13,6 +13,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="../images/common/favicon.png">
 
     <script src="../js/common.js" defer></script>
+    <script src="../js/inquiry.js" defer></script>
+    
 
 </head>
 <body>
@@ -72,30 +74,54 @@
 
 <!-- header end -->
 
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"> </script> 
+<script type="text/javascript"> 
+(function(){ emailjs.init("YOUR_USER_ID"); })(); 
+</script>
 
 <div class="sub-container">
+    <div class="inner">
     
-    <!-- 문의하기 start -->
+ 
+ <div class="register-wrap">
+
+      <!-- 문의하기 start -->
+
+    
     <div class="regGroup">
-        <label for="">회사명</label>
-        <input type="text" name="" id="" class="field" placeholder="이름">
+        <label for="" class="desc">회사명</label>
+        <div class="regform">
+         <input type="text" name="" id="company" class="field desc-sm" lang="en" placeholder="회사명을 입력해주세요." autocomplete="off">
+        </div>
     </div>
 
-    <div class="">
-      <label for="">이메일</label>
-      <input type="email" name="" id="" class="field" placeholder="이름">
-  </div>
+    <div class="regGroup">
+      <label for="" class="desc">이메일</label>
+      <div class="regform">
+        <input type="email" name="" id="email" class="field desc-sm" lang="en" placeholder="abc@naver.com" autocomplete="off" >
+      </div>
+    </div>
 
-  <div class="">
-    <label for="">연락처</label>
-    <input type="tel" name="" id="" class="field" placeholder="이름">
-</div>
+    <div class="regGroup">
+       <label for="" class="desc">연락처</label>
+      <div class="regform">
+         <input type="tel" name="" id="phone" lang="en" class="field desc-sm" placeholder="'-'없이 입력해주세요." autocomplete="off">
+      </div>
+    </div>
 
-  <div class="">
-    <label for="">내용</label>
-   
-    <textarea name="" id="" cols="30" rows="10"></textarea>
-  
+    <div class="regGroup">
+      <label for="" class="desc">내용</label>
+       <div class="regform">
+       
+        <textarea name="" id="message" lang="en" class="field-text desc-sm" cols="30" rows="10" autocomplete="off"></textarea>
+      </div>
+    </div>
+
+    <div class="btn-wrap">
+      <button type="button" value="메일 보내기" id="btn_confirm" 
+      class="btn desc-sm" onclick="sendClick()">확인</button>
+    </div>
+
 </div>
 
 
@@ -104,7 +130,7 @@
 
   </div>
 
-
+</div>
     </div>
 
 </body>

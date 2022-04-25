@@ -37,6 +37,7 @@ html::-webkit-scrollbar-track {
 body{
     background-color: #000;
     color: #fff;
+    font-family: "Noto Sans KR", "Montserrat", sans-serif,"맑은 고딕","Nanum Gothic","나눔 고딕","돋움",dotum,sans-serif;
    
 }
 body ::-moz-selection {background: #d6005e;  color: #fff;text-shadow: none;}
@@ -71,7 +72,7 @@ body ::selection {background: #d6005e;color: #fff;text-shadow: none;}
 
     .desc{font-size: 2.474vw;}
     .desc-md{font-size: 2.213vw;}
-    .desc-sm{font-size: 1.953vw;}
+    .desc-sm{font-size: 1.753vw;}
 
     /* .basic{ font-size: 1.848vw;}
     .basic-md{ font-size:1.478vw;} */
