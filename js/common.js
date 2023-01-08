@@ -48,7 +48,6 @@ window.onpageshow = function () {
     const urlParams = new URLSearchParams(window.location.search);
     const myParam = urlParams.get('section');
 
-
     elemRemove2(myParam);
 }
 
@@ -59,9 +58,7 @@ function elemRemove(menuNum) {
             window.scroll({ top: sections[i].offsetTop, behavior: 'smooth' });
             document.getElementById("menu" + (i + 1)).classList.add('active');
 
-            // if (matchMedia("screen and (max-width: 1099px)").matches) {
-            //     toggleClick();
-            // }
+
 
         } else {
             document.getElementById("menu" + (i + 1)).classList.remove('active');
