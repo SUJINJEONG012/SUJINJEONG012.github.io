@@ -1,0 +1,131 @@
+@charset "utf-8";
+
+
+
+
+input[type="text"], 
+input[type="password"], 
+input[type="search"], 
+input[type="number"], 
+input[type="date"], 
+input[type="datetime"], 
+input[type="email"], 
+input[type="tel"] {
+    border: 0px;
+}
+
+input[type=text], input[type=tel], input[type=email], input[type=password], input[type=url], input[type=number], input[type=search], textarea {
+    -webkit-appearance: none;
+
+    
+   
+}
+
+
+/* 자동완성 */
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px transparent inset;
+    color: #fff;
+  }
+  input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    color: #fff;
+  }
+
+input, textarea, select {
+  
+    font-size: 13px;
+    background-color: transparent; 
+    font-style: normal;
+    font-weight: 300;
+    border:none;
+    border-radius: 0;
+    font-size: 100%; 
+    margin: 0;
+    outline: none;
+    vertical-align: middle; 
+    resize: none;                               
+
+    
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+   
+}
+
+.register-wrap *{                
+    color:#fff;
+}
+.register-wrap {
+    width: 100%;
+    padding-top: 8rem;
+}
+.register-wrap .regGroup{
+margin-bottom: 2rem;
+}
+
+.register-wrap .regform{
+    
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding-top: 1rem;
+    font-size: 12px;
+    -webkit-transition: border .3s;
+    transition: ease-in-out 0.2s all;
+}
+.register-wrap .regform::before, .register-wrap .regform::after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    border-radius: 50px;
+    transition: ease-in-out 0.6s all;
+    transition: ease-in-out 0.6s all;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.register-wrap .regform:before {
+    width: 100%;
+    background-color: #7c7c7c;
+  }
+  
+  .register-wrap .regform:after {
+    background-image: linear-gradient(90deg, #52616b, #fff);
+    width: 0%;
+  }
+
+  .register-wrap .regform:hover::after {
+    width: 100%;
+  }
+
+  .register-wrap .regform .field{
+    height: 40px;
+  }
+
+  .register-wrap .regform .field-text{
+    height: 120px;
+  }
+
+ /*=============문의하기 버튼=============*/
+
+.btn-wrap{
+    position: relative;
+   text-align: center;
+   
+}
+
+.btn-wrap > button{
+    color: #fff;
+    width: 100%;
+    border: 1px solid #eee;
+    height: 70px;
+    cursor: pointer;
+    background: transparent;
+}
+  
