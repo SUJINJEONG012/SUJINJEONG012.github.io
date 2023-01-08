@@ -20,7 +20,7 @@ const sections = document.querySelectorAll('.section');
 const html = document.querySelector('html');
 const header = html.querySelector('.header');
 const btnSitemap = html.querySelector('.nav-icon');
-const sitemap = html.querySelector('.nav-mobile');
+const sitemap = html.querySelector('.nav-info');
 
 
 //toggle 클릭했을 경우 열고 닫히는 이벤트 함수 
@@ -54,23 +54,22 @@ window.onpageshow = function () {
 
 function elemRemove(menuNum) {
     for (let i = 0; i < menus.length; i++) {
-        if (i === menuNum % 6) {
+        if (i === menuNum % 4) {
             window.scroll({ top: sections[i].offsetTop, behavior: 'smooth' });
             document.getElementById("menu" + (i + 1)).classList.add('active');
-
-
-
         } else {
             document.getElementById("menu" + (i + 1)).classList.remove('active');
         }
     }
 }
+
+
 // 함수호출 toggleClick(); 를 함수로 만든 후, 햄버게메뉴 클릭시 열고/닫히는 이벤트와
 // 모바일 메뉴클릭시 콘텐츠로 변경될때 햄버거메뉴가 닫히는 이벤트랑 동일 한번에 함수로 만듦  
 
 function elemRemove2(menuNum) {
     for (let i = 0; i < menus.length; i++) {
-        if (i === menuNum % 6) {
+        if (i === menuNum % 4) {
             window.scroll({ top: sections[i].offsetTop, behavior: 'smooth' });
             document.getElementById("menu" + (i + 1)).classList.add('active');
 

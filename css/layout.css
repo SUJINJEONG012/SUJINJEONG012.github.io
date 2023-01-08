@@ -1,5 +1,8 @@
 @charset "utf-8";
 
+
+html.active {}
+
 body {
     position: relative;
     line-height: 1;
@@ -29,6 +32,12 @@ body {
 
 }
 
+
+.header.active {
+    background-color: #000;
+}
+
+
 .header .header-inner {
     position: relative;
     max-width: 1400px;
@@ -53,7 +62,6 @@ body {
     width: calc(100% - 147px);
 }
 
-.header .nav {}
 
 .header .nav .navbar li {
     cursor: pointer;
@@ -140,43 +148,6 @@ body {
     transform: scale(0);
 }
 
-.nav-mobile {
-    display: none;
-    position: absolute;
-    top: 80px;
-    left: 0px;
-    right: 0px;
-    background-color: rgb(11 200 194);
-    z-index: 200;
-}
-
-.nav-mobile.active {
-    display: block;
-}
-
-.nav-mobile .nav-moCont li {
-    cursor: pointer;
-    padding: 30px;
-    color: rgb(255, 255, 255);
-}
-
-.nav-mobile .nav-moCont li:hover {
-    background-color: #189292;
-}
-
-.nav-mobile .nav-moCont li span {
-    color: rgb(255, 255, 255);
-}
-
-span.mobile_br {
-    display: block;
-}
-
-span.mobile_br2 {
-    display: block;
-}
-
-
 
 
 .header .nav {
@@ -195,6 +166,11 @@ span.mobile_br2 {
     padding-right: 68px;
 }
 
+.header .nav .navmenu li>span {
+    color: #8e8e8e;
+}
+
+
 .header .nav .navmenu li>span:hover::before {
     content: "";
     display: block;
@@ -205,11 +181,11 @@ span.mobile_br2 {
     left: 50%;
     transform: translateX(-50%);
     border-radius: 50%;
-    background: rgb(76, 200, 202);
+    background: rgb(255, 255, 255);
 }
 
 .header .nav .navmenu li>span.active {
-    color: rgb(76, 200, 202);
+    color: rgb(255, 255, 255);
     position: relative;
 }
 
@@ -223,18 +199,61 @@ span.mobile_br2 {
     left: 50%;
     transform: translateX(-50%);
     border-radius: 50%;
-    background: rgb(76, 200, 202);
+    background: rgb(255, 255, 255);
 }
 
-/* 
-  .header .nav-icon {
+
+/* toggle 클릭했을 시 나오는 메뉴*/
+.nav-info {
     display: none;
-  } */
-
-.header {
-    width: 100%;
-    position: fixed;
+    position: absolute;
+    top: 80px;
+    left: 0px;
+    right: 0px;
+    background-color: rgb(0, 0, 0);
+    z-index: 200;
 }
+
+.nav-info.active {
+    display: block;
+}
+
+.nav-info .nav-infoCont {}
+
+.nav-info .nav-infoCont li {
+    display: flex;
+
+    min-height: 500px;
+    cursor: pointer;
+    padding: 30px;
+    color: rgb(255, 255, 255);
+    height: 100%;
+}
+
+.nav-info .nav-infoCont li i {
+    font-size: 20px;
+    vertical-align: middle;
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.nav-info .nav-infoCont li a {
+    font-size: 19px;
+}
+
+.nav-info .nav-infoCont li:hover {
+    color: #fff;
+}
+
+.nav-info .nav-infoCont li span {
+    color: rgb(255, 255, 255);
+}
+
+
+
+
+
+
 
 
 
@@ -245,12 +264,6 @@ span.mobile_br2 {
 span.mobile_br {
     display: inline-block;
 }
-
-
-
-
-
-
 
 
 
@@ -275,106 +288,4 @@ span.mobile_br {
 
 .section {
     padding: 3rem 0;
-}
-
-
-
-
-
-
-
-
-.header-over {
-    display: none;
-    z-index: 500;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transition: all 0.2s ease;
-
-}
-
-
-
-.header-over .bg-area::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    transform: translateY(0%);
-    transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
-
-.header-over .bg-area::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transition: background-color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    background: #000;
-    background-position: 90% 90%;
-    width: 100%;
-    margin-right: 10%;
-
-}
-
-
-
-
-
-
-
-
-.contact-list li {
-    font-size: 21px;
-    padding: 2rem 0;
-}
-
-.header-over .open-nav-wrap .nav-inner .info-wrap {
-    flex: 0 0 50%;
-    display: flex;
-    justify-content: flex-start;
-    max-width: 50%;
-    margin-top: 0;
-    padding-bottom: 30px;
-
-}
-
-@media screen and (min-width:992px) {
-    .header-over .open-nav-wrap .nav-inner {
-        flex-direction: row;
-    }
-
-    .header-over .open-nav-wrap .nav-inner .info-wrap {
-        justify-content: center;
-    }
-}
-
-
-.header-over .open-nav-wrap .nav-inner .info-wrap .contact-list i {
-    display: inline-block;
-    font-size: 35px;
-    cursor: pointer;
-    vertical-align: middle;
-    padding-right: 20px;
-    width: 45px;
-
-}
-
-
-
-html.active {}
-
-.main_header.active {
-    background-color: #000;
-}
-
-.header-over.active {
-    display: block;
 }
