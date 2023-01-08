@@ -240,11 +240,7 @@ span.mobile_br2 {
     position: fixed;
 }
 
-.header .header-inner {
-    max-width: 1400px;
-    margin: 0px auto;
-    height: 97px;
-}
+
 
 .header .logo {
     width: 147px;
