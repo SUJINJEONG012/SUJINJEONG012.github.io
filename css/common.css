@@ -9,7 +9,7 @@
     box-sizing: border-box;
 }
 
-html{
+html {
     scrollbar-3dLight-Color: #ddd;
     scrollbar-arrow-color: #ddd;
     scrollbar-base-color: #eee;
@@ -19,80 +19,98 @@ html{
     scrollbar-Highlight-Color: #ddd;
     scrollbar-Shadow-Color: #f2f2f2;
 }
+
 html::-webkit-scrollbar {
     width: 5px;
 }
+
 html::-webkit-scrollbar-thumb {
     -webkit-border-radius: 15px;
     border-radius: 15px;
     background-color: #ddd;
     -webkit-box-shadow: inset 0 0 1px rgb(0 0 0 / 2%);
 }
+
 html::-webkit-scrollbar-track {
     -webkit-border-radius: 0;
     border-radius: 0;
 }
 
 
-body{
+body {
     background-color: #000;
     color: #fff;
-    font-family: "Noto Sans KR", "Montserrat", sans-serif,"맑은 고딕","Nanum Gothic","나눔 고딕","돋움",dotum,sans-serif;
-   
-}
-body ::-moz-selection {background: #d6005e;  color: #fff;text-shadow: none;}
-body ::selection {background: #d6005e;color: #fff;text-shadow: none;}
+    font-family: "Noto Sans KR", "Montserrat", sans-serif, "맑은 고딕", "Nanum Gothic", "나눔 고딕", "돋움", dotum, sans-serif;
 
-[lang="ko"] {font-family: "Noto Sans KR", "Montserrat", sans-serif,"맑은 고딕","Nanum Gothic","나눔 고딕","돋움",dotum,sans-serif;}
-[lang="en"] {font-family: "Montserrat", "Noto Sans KR", sans-serif; letter-spacing: 0;  font-weight: 400;}
-[lang="comma"] {font-family: "Montagu Slab", "Montserrat", "Noto Sans KR", sans-serif; letter-spacing: 0;  font-weight: 600;}
+}
+
+body ::-moz-selection {
+    background: #090909;
+    color: #fff;
+    text-shadow: none;
+}
+
+body ::selection {
+    background: #090909;
+    color: #fff;
+    text-shadow: none;
+}
+
+[lang="ko"] {
+    font-family: "Noto Sans KR", "Montserrat", sans-serif, "맑은 고딕", "Nanum Gothic", "나눔 고딕", "돋움", dotum, sans-serif;
+}
+
+[lang="en"] {
+    font-family: "Montserrat", "Noto Sans KR", sans-serif;
+    letter-spacing: 0;
+    font-weight: 400;
+}
+
+[lang="comma"] {
+    font-family: "Montagu Slab", "Montserrat", "Noto Sans KR", sans-serif;
+    letter-spacing: 0;
+    font-weight: 600;
+}
 
 
 
 /* font  */
-.title-big{font-size: 30px;}
-.title{font-size:28px;}
-.title-md{font-size:21px; }
-.title-sm{font-size:19px;}
-
-.desc{font-size:19px;}
-.desc-md{font-size:17px;}
-.desc-sm{font-size:16px;} 
-
-.basic{font-size: 15px;} 
-.basic-md{ font-size:14px;}
-.basic-sm{ font-size:13px;}
-
-
-@media screen and (min-width:768px){
-    .title-big{font-size: 9.923vw;}
-    .title{font-size: 3.648vw;} 
-    .title-md{font-size: 3.534vw;}
-    .title-sm{font-size: 2.43vw;} 
-
-    .desc{font-size: 2.474vw;}
-    .desc-md{font-size: 2.213vw;}
-    .desc-sm{font-size: 1.753vw;}
-
-    /* .basic{ font-size: 1.848vw;}
-    .basic-md{ font-size:1.478vw;} */
-    
+.title-big {
+    font-size: 50px;
 }
 
-@media (min-width: 1200px){
-    .title-big{font-size:120px;}
-    .title{font-size:75px;} 
-    .title-md{font-size:40px;}
-    .title-sm{font-size:25px;}
-
-    .desc{ font-size:32px;}
-    .desc-md{  font-size:28px;}
-    .desc-sm{ font-size:24px;}
-   
-    /* .basic{ font-size:20px;}
-    .basic-md{ font-size:17px;}
-    .basic-sm{font-size:15px;} */
-
+.title {
+    font-size: 28px;
 }
 
+.title-md {
+    font-size: 21px;
+}
 
+.title-sm {
+    font-size: 19px;
+}
+
+.desc {
+    font-size: 19px;
+}
+
+.desc-md {
+    font-size: 17px;
+}
+
+.desc-sm {
+    font-size: 16px;
+}
+
+.basic {
+    font-size: 15px;
+}
+
+.basic-md {
+    font-size: 14px;
+}
+
+.basic-sm {
+    font-size: 13px;
+}
