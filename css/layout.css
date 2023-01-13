@@ -80,75 +80,6 @@ body {
     cursor: pointer;
 }
 
-.header .nav-icon {
-    width: 24px;
-    cursor: pointer;
-    z-index: 100;
-    transform: translateY(-50%);
-}
-
-.header .nav-icon>span {
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 100%;
-}
-
-.header .nav-icon {
-    display: inline-block;
-    width: 24px;
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    z-index: 100;
-    transform: translateY(-50%);
-}
-
-.header .nav-icon::before,
-.header .nav-icon span,
-.header .nav-icon::after {
-    background-color: rgb(255, 255, 255);
-    content: "";
-    display: block;
-    height: 2px;
-    margin: 5px 0px;
-    transition: all 0.2s ease-in-out 0s;
-}
-
-.header .nav-icon::before {
-    margin-top: 0px;
-}
-
-.header .nav-icon::after {
-    margin-bottom: 0px;
-}
-
-.header .nav-icon:hover>span {
-    border-top-color: rgb(76, 200, 202);
-}
-
-.header .nav-icon:hover>span {
-    border-top-color: rgb(76, 200, 202);
-}
-
-.header .nav-icon.active::before {
-    transform: translateY(8px) rotate(135deg);
-}
-
-.header .nav-icon.active::before {
-    transform: translateY(8px) rotate(135deg);
-}
-
-.header .nav-icon.active::after {
-    transform: translateY(-6px) rotate(-135deg);
-}
-
-.header .nav-icon.active span {
-    transform: scale(0);
-}
-
-
 
 .header .nav {
     display: block;
@@ -169,6 +100,26 @@ body {
 .header .nav .navmenu li>span {
     color: #8e8e8e;
 }
+
+
+.header .nav-info ul {
+    display: flex;
+
+}
+
+.header .nav-info .nav-infoCont>li {
+    padding-right: 12px;
+}
+
+.header .nav-info .nav-infoCont>li>a {
+    display: flex;
+    align-items: center;
+}
+
+.header .nav-info .nav-infoCont>li>a>i {
+    font-size: 20px;
+}
+
 
 
 .header .nav .navmenu li>span:hover::before {
@@ -201,55 +152,6 @@ body {
     border-radius: 50%;
     background: rgb(255, 255, 255);
 }
-
-
-/* toggle 클릭했을 시 나오는 메뉴*/
-.nav-info {
-    display: none;
-    position: absolute;
-    top: 80px;
-    left: 0px;
-    right: 0px;
-    background-color: rgb(0, 0, 0);
-    z-index: 200;
-}
-
-.nav-info.active {
-    display: block;
-}
-
-.nav-info .nav-infoCont {}
-
-.nav-info .nav-infoCont li {
-    display: flex;
-
-    min-height: 500px;
-    cursor: pointer;
-    padding: 30px;
-    color: rgb(255, 255, 255);
-    height: 100%;
-}
-
-.nav-info .nav-infoCont li i {
-    font-size: 20px;
-    vertical-align: middle;
-    display: inline-block;
-    padding-right: 10px;
-}
-
-.nav-info .nav-infoCont li a {
-    font-size: 19px;
-}
-
-.nav-info .nav-infoCont li:hover {
-    color: #fff;
-}
-
-.nav-info .nav-infoCont li span {
-    color: rgb(255, 255, 255);
-}
-
-
 
 
 

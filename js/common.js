@@ -7,19 +7,19 @@ const sections = document.querySelectorAll('.section');
 //사이트맵 열고닫기 상수 지정
 const html = document.querySelector('html');
 const header = html.querySelector('.header');
-const btnSitemap = html.querySelector('.nav-icon');
+const navmenu = html.querySelector('.navmenu');
 const sitemap = html.querySelector('.nav-info');
 
 
 //toggle 클릭했을 경우 열고 닫히는 이벤트 함수 
 function toggleClick() {
     header.classList.toggle('active'); // overflow: hidden;
-    btnSitemap.classList.toggle('active');
-    sitemap.classList.toggle('active');
+    navmenu.classList.toggle('active');
+
 }
 
 //함수실행
-btnSitemap.addEventListener('click', () => {
+navmenu.addEventListener('click', () => {
     toggleClick();
 });
 
@@ -27,7 +27,7 @@ btnSitemap.addEventListener('click', () => {
 window.onpageshow = function () {
 
     header.classList.remove('active'); // overflow: hidden;
-    btnSitemap.classList.remove('active');
+    navmenu.classList.remove('active');
     sitemap.classList.remove('active');
 
     for (let i = 0; i < menus.length; i++) {
