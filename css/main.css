@@ -315,10 +315,11 @@
 
 
 
-.modal-custom-button {
-  width: 450px;
-  height: 450px;
-  background-image: url(../images/project/project01.png);
+.modal-custom-button.pro01 {
+  width: 605px;
+  height: 420px;
+  background-image: url(../images/project/zara/zara01.svg);
+  background-size: cover;
 }
 
 .modal-custom {
@@ -343,15 +344,14 @@
 
 
 .modal-content {
-  width: 50%;
-  height: 500px;
+  width: 70%;
+  height: 600px;
   position: relative;
   padding: 50px 100px;
   background-color: #fff;
   text-align: center;
   border-radius: 6px;
-
-
+  overflow: scroll;
 }
 
 .close-modal {
