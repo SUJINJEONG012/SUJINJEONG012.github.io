@@ -66,6 +66,12 @@ body ::selection {
     font-weight: 300;
 }
 
+[lang="comma"] {
+    font-family: "Montagu Slab", "Montserrat", "Noto Sans KR", sans-serif;
+    letter-spacing: 0;
+    font-weight: 600;
+}
+
 /* font  */
 .title-big {
     font-size: 50px;

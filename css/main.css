@@ -197,8 +197,7 @@
 
 .provision-kind-list {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  flex-direction: row;
   width: 100%;
   justify-content: flex-start;
 
