@@ -77,10 +77,12 @@ body ::selection {
 
 .title-md {
     font-size: 21px;
+    margin: 30px auto;
 }
 
 .title-sm {
     font-size: 19px;
+    margin: 30px auto;
 }
 
 .desc {

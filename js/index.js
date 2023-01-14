@@ -5,9 +5,7 @@ const modal = document.querySelector('.modal');
 const overlay = modal.querySelector('.md_overlay');
 const closeBtn = modal.querySelector('button');
 
-
 //동작 함수
-
 const openModal = () => {
     modal.classList.remove('hidden');
 }

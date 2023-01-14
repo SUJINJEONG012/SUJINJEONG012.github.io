@@ -204,12 +204,6 @@
 
 }
 
-@media screen and (min-width:992px) {
-  .provision-kind-list {
-    flex-direction: row;
-  }
-}
-
 
 
 .provision-kind-item {
@@ -217,13 +211,7 @@
   margin-right: 1%;
 }
 
-@media screen and (min-width:992px) {
-  .provision-kind-item {
-    width: 32%;
-    margin-right: 1%;
-  }
 
-}
 
 .provision-kind-list span {}
 
@@ -305,11 +293,7 @@
 
 }
 
-.projects .title-wrap>p {
-
-  margin: 30px auto;
-
-}
+.projects .title-wrap>p {}
 
 .tagline {
   position: absolute;
@@ -492,6 +476,7 @@
 
 .various-list {
   display: flex;
+  flex-direction: column;
   width: 100%;
   justify-content: flex-start;
   margin-bottom: 30px;
