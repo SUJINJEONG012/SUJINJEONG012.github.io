@@ -1,27 +1,29 @@
-'use strict'
-//필요한 엘리먼트들을 선택한다.
-const openBtn = document.querySelector('.modalOpen');
-const modal = document.querySelector('.modal');
-const overlay = modal.querySelector('.md_overlay');
-const closeBtn = modal.querySelector('button');
 
-//동작 함수
-const openModal = () => {
-    modal.classList.remove('hidden');
+let btn = document.querySelectorAll("button.modal-custom-button");
+let modals = document.querySelectorAll(".modal-custom");
+let spans = document.getElementsByClassName("close-modal");
+
+for (let i = 0; i < btn.length; i++) {
+    btn[i].onclick = function (e) {
+        e.preventDefault();
+        modal = document.querySelector(e.target.getAttribute("href"));
+        modal.style.display = "block";
+    }
+
+    spans[i].onclick = function () {
+        for (let index in modals) {
+            if (typeof modals[index].style !== 'undefined')
+                modals[index].style.display = "none";
+        }
+    }
+
 }
-const closeModal = () => {
-    modal.classList.add('hidden');
+
+
+window.onclick = function (event) {
+    if (event.target.classList.contains('modal-custom')) {
+        for (let index in modals) {
+            if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";
+        }
+    }
 }
-
-//클릭이벤트
-
-openBtn.addEventListener('click', openModal);
-closeBtn.addEventListener('click', closeModal);
-
-
-
-
-
-
-
-
