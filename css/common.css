@@ -83,12 +83,11 @@ body ::selection {
 
 .title-md {
     font-size: 21px;
-    margin: 30px auto;
 }
 
 .title-sm {
     font-size: 19px;
-    margin: 30px auto;
+
 }
 
 .desc {
@@ -113,4 +112,9 @@ body ::selection {
 
 .basic-sm {
     font-size: 13px;
+}
+
+.tit-mg {
+    margin: 30px auto;
+    padding: 5rem 0;
 }

@@ -150,11 +150,6 @@ body {
 }
 
 
-
-
-
-
-
 .header .logo {
     width: 147px;
 }
@@ -185,5 +180,37 @@ span.mobile_br {
 }
 
 .section {
-    padding: 3rem 0;
+    padding: 10rem 0;
+}
+
+
+.footer {
+    padding: 4rem 0;
+}
+
+.footer .footer-wrap ul {
+    display: flex;
+}
+
+.footer .footer-wrap ul li {}
+
+.footer .footer-wrap ul li~li::before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 15px;
+    background-color: #adadad;
+    margin: 0 0.75rem;
+}
+
+.footer .footer-wrap ul li a {
+    font-size: 17px;
+    font-weight: 500;
+
+
+}
+
+.footer-wrap .footer-copy {
+    font-size: 11px;
+    margin-top: 30px;
 }
