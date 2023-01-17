@@ -292,9 +292,8 @@
 
 .projects-item {
   position: relative;
-
   margin-right: 1%;
-  margin-bottom: 1%;
+  margin-bottom: 4%;
 
 }
 
@@ -362,7 +361,6 @@
   width: 70%;
   height: 600px;
   position: relative;
-  padding: 50px 100px;
   background-color: #fff;
   text-align: center;
   border-radius: 6px;
@@ -370,8 +368,6 @@
 }
 
 .close-modal {
-  color: white;
-  float: right;
   font-size: 28px;
   font-weight: bold;
 }
@@ -385,18 +381,33 @@
 
 .modal-header {
   padding: 2px 16px;
-  background-color: #5cb85c;
-  color: white;
+  background-color: transparent;
+  color: #fff;
+
+}
+
+.modal-header .inner {}
+
+.modal-header .inner h2 {
+  font-size: 33px;
 }
 
 .modal-body {
   padding: 2px 16px;
 }
 
+.modal-body .modal-text {
+  padding: 5rem 0;
+}
+
+.modal-body .modal-img {
+  padding: 5rem 0;
+}
+
 .modal-footer {
   padding: 2px 16px;
-  background-color: #5cb85c;
-  color: white;
+  background-color: transparent;
+  color: #fff;
 }
 
 
