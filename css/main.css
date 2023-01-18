@@ -285,9 +285,9 @@
 
 }
 
-
-
-.projects-list {}
+.projects-list {
+  display: flex;
+}
 
 
 .projects-item {
