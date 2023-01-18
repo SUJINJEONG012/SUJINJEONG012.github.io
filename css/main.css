@@ -388,6 +388,29 @@
 
 .modal-header .inner {}
 
+.modal-header .inner .modal-link {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+.modal-header .inner .modal-link li~li::before {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 15px;
+  background-color: #adadad;
+  margin: 0 0.75rem;
+}
+
+
+
+.modal-header .inner .modal-link a {
+  font-weight: 500;
+}
+
 .modal-header .inner h2 {
   font-size: 33px;
   padding-bottom: 2rem;
