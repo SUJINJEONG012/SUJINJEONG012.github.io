@@ -313,24 +313,24 @@
 
 
 .modal-custom-button.pro01 {
-  width: 1200px;
-  height: 635px;
+  width: 360px;
+  height: 240px;
 
-  background-image: url(../images/main/main_legacy.png);
+  background-image: url(../images/main/main_legacy.svg);
   background-size: cover;
 }
 
 .modal-custom-button.pro02 {
-  width: 1200px;
-  height: 635px;
-  background-image: url(../images/main/main_jpa.png);
+  width: 360px;
+  height: 240px;
+  background-image: url(../images/main/main_jpa.svg);
   background-size: cover;
 }
 
 .modal-custom-button.pro03 {
-  width: 1200px;
-  height: 635px;
-  background-image: url(../images/main/main_zara.png);
+  width: 360px;
+  height: 240px;
+  background-image: url(../images/main/main_zara.svg);
   background-size: cover;
 }
 
