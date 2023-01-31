@@ -45,8 +45,10 @@
           <ul class="navmenu">
             <li class="menus"><span id="menu1" lang="en">About</span></li>
             <li class="menus"><span id="menu2" lang="en">Project</span></li>
-            <li class="menus"><span id="menu3" lang="en">What I can do</span>
+            <li class="menus"><span id="menu3" lang="en">What I can do</span></li>
+            <li class="menus"><span id="menu4" lang="en">Contact</span>
             </li>
+
 
 
           </ul>
@@ -531,8 +533,95 @@
         </div>
       </div>
       <!-- descriptive end -->
+
+
+
+      <script>
+
+        function check() {
+          document.querySelector(".subform").action = "https://script.google.com/macros/s/AKfycbwFfiXvkhseOGq5rJaT2M0vwNFHFXPqw7IQgD9N669jlP9wRf3mEIpfh_nziESvJil2Yg/exec";
+          let email = document.getElementById("email").value;
+          let name = document.getElementById("name").value;
+          let content = document.getElementById("content").value;
+
+
+          //모든 공백 체크 정규식
+          let regExp = /\s/g;
+          // 이름 정규식 가~히, 한글로 이루어진 문자만으로 2~6자리
+          let nameReg = /^[가-힣]{2,6}$/;
+          // 이메일 검사 정규식
+          let emailReg = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;
+
+
+          if (!nameReg.test(name) || name.trim() == "") {
+            alert("이름을 형식에 맞춰서 입력해주세요.")
+            document.getElementById("name").focus();
+            document.getElementById("name").value = "";
+            return false;
+          } else if (!emailReg.test(email) || email.trim() == "") {
+            alert("이메일을 형식에 맞춰서 입력해주세요.")
+            document.getElementById("email").focus();
+            document.getElementById("email").value = "";
+            return false;
+          } else if (content.trim() == "") {
+            alert("내용을 입력해주세요.")
+            document.getElementById("content").focus();
+            document.getElementById("content").value = "";
+            return false;
+          }
+
+          alert("메일이 정상적으로 보내졌습니다."); //출력정상
+          parent.document.location.reload() //확인 버튼 되고 메인으로 이동
+
+        }
+
+
+      </script>
+
+
+
+      <div class="section contact">
+        <div class="inner">
+          <h2 class="title-big" lang="en">Contact to me.</h2>
+
+          <form class="subform" method="POST" data-email="peekaboo2189@gmail.com"
+            action="https://script.google.com/macros/s/AKfycbwFfiXvkhseOGq5rJaT2M0vwNFHFXPqw7IQgD9N669jlP9wRf3mEIpfh_nziESvJil2Yg/exec"
+            target="frAttachFiles">
+            <ul class="contact-list">
+              <li class="contact-item">
+                <h2>이름</h2>
+                <input type="text" name="name" id="name" lang="en" placeholder="이름을 입력해주세요." />
+              </li>
+
+              <li class="contact-item">
+                <h2>이메일</h2>
+                <input type="email" name="email" id="email" lang="en" placeholder="이메일을 입력해주세요." />
+              </li>
+
+              <li class="contact-item">
+                <h2>내용</h2>
+                <textarea cols="30" rows="5" name="content" id="content" lang="en" placeholder="내용을 입력해주세요."></textarea>
+              </li>
+
+            </ul>
+
+            <div class="btn-wrap">
+              <button type="submit" onclick="check()">보내기</button>
+            </div>
+
+          </form>
+
+          <iframe name="frAttachFiles" style="display: none"></iframe>
+
+
+        </div>
+      </div>
+
     </div>
     <!--container end-->
+
+
+
 
 
 
