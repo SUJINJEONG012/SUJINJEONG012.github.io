@@ -230,4 +230,8 @@ span.mobile_br {
         padding: 5rem 0;
     }
 
+
+    .footer .footer-wrap ul{flex-wrap: wrap;}
+    .footer .footer-wrap ul li~li::before{display:none;}
+
 }
