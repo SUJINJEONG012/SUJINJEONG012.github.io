@@ -81,6 +81,7 @@ input:-webkit-autofill:active {
 
 .contact-item {
   display: flex;
+  flex-wrap: wrap;
   padding-top: 5rem;
   align-items: center;
 }

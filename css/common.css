@@ -123,7 +123,10 @@ body ::selection {
     .title-big {
         font-size: 33px;
     }
-
+    .desc-md{font-size:12px;}
+    .title-md {
+        font-size: inherit;
+    }
     .tit-mg{
         padding: 2rem 0;
     }

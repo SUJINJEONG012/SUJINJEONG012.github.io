@@ -561,6 +561,7 @@
 
 @media all and (max-width: 960px) {
 
+  .provision-kind{margin-bottom:0;}
   .provision-kind-list{
     flex-wrap: wrap;
   }
@@ -574,4 +575,27 @@
     flex-direction: row;
   }
 
+  .projects-list{
+    flex-wrap: wrap;
+  }
+
+  .modal-custom{
+    top:10%;
+  }
+
+  .modal-content{
+    width:90%;
+  }
+
+}
+
+
+@media all and (max-width: 480px) {
+
+  .provision-kind-list h2{
+    padding:15px 0;
+  }
+
+
+ 
 }
