@@ -12,9 +12,11 @@ body {
 #wrap {
     position: relative;
     overflow: hidden;
+    width: 100%;
 }
 
 /*==========================  HEADER  ===============================*/
+
 .header {
     width: 100%;
     padding-left: 15px;
@@ -49,8 +51,7 @@ body {
 
 .header .logo a {
     display: block;
-    width: 147px;
-    height: 42px;
+    width: 250px;
     font-size: 30px;
 }
 
@@ -151,9 +152,7 @@ body {
 }
 
 
-.header .logo {
-    width: 147px;
-}
+.header .logo {}
 
 span.mobile_br {
     display: inline-block;
@@ -215,4 +214,13 @@ span.mobile_br {
 .footer-wrap .footer-copy {
     font-size: 11px;
     margin-top: 30px;
+}
+
+
+
+@media all and (max-width: 1024px) {
+
+    .header .nav{display: none;}
+    
+
 }
