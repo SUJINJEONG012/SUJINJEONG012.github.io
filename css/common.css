@@ -118,3 +118,13 @@ body ::selection {
     margin: 30px auto;
     padding: 5rem 0;
 }
+
+@media all and (max-width: 960px) {
+    .title-big {
+        font-size: 33px;
+    }
+
+    .tit-mg{
+        padding: 2rem 0;
+    }
+}

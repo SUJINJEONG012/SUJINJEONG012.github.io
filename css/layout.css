@@ -219,8 +219,12 @@ span.mobile_br {
 
 
 @media all and (max-width: 1024px) {
-
+    .header .header-inner{
+        width: 90%;
+    }
     .header .nav{display: none;}
-    
+    .section{
+        padding: 5rem 0;
+    }
 
 }

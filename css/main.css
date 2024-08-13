@@ -503,10 +503,14 @@
   position: relative;
 
 }
-
-.descriptive picture img {
+.descriptive-img{
+  display:flex;
+  justify-content: space-between; 
+  flex-direction: row-reverse; 
+  align-items: flex-end;
+}
+.descriptive-img img {
   width: 80%;
-
 }
 
 
@@ -559,6 +563,15 @@
 
   .provision-kind-list{
     flex-wrap: wrap;
+  }
+
+  .projects .title-wrap .point{
+    font-size: 43px;
+  }
+
+  .descriptive-img{
+    flex-wrap: wrap;
+    flex-direction: row;
   }
 
 }
