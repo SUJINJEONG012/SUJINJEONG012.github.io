@@ -222,6 +222,9 @@ span.mobile_br {
     .header .header-inner{
         width: 90%;
     }
+    .header .logo a{
+        width:auto; font-size:20px;
+    }
     .header .nav{display: none;}
     .section{
         padding: 5rem 0;
