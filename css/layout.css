@@ -232,6 +232,7 @@ span.mobile_br {
 
 
     .footer .footer-wrap ul{flex-wrap: wrap;}
+    .footer .footer-wrap ul li{width:100%;}
     .footer .footer-wrap ul li~li::before{display:none;}
 
 }
