@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JEONGSUJIN PORTFOLIO ® </title>
+
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/inquiry.css">
+
+  <link rel="icon" type="image/image/x-icon" href="/favicon.icon">
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="../js/index.js" defer></script>
+  <script src="../js/common.js" defer></script>
+
+</head>
+
+<body>
+<!-- 셀렉터했을경우 색상 변경되는거, 스크롤 스타일 수정 -->
+<div id="wrap">
+ 
+
+    <header class="header">
+      <div class="header-inner">
+
+        <h1 class="logo"><a href="/" lang="en">JEONGSUJIN</a> </h1>
+
+        <nav class="nav">
+          <ul class="navmenu">
+            <li class="menus"><span id="menu1" lang="en">About</span></li>
+            <li class="menus"><span id="menu2" lang="en">Project</span></li>
+            <li class="menus"><span id="menu3" lang="en">What I can do</span></li>
+            <li class="menus"><span id="menu4" lang="en">Contact</span>
+            </li>
+
+          </ul>
+        </nav>
+
+
+
+        <div class="nav-info">
+          <ul class="nav-infoCont">
+            <li class="">
+              <a href="https://velog.io/@angela_/series" target="_blank" lang="en">
+                <i>📚</i>Blog
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/SUJINJEONG012" target="_blank" lang="en">
+                <i>🐱</i>Github
+              </a>
+            </li>
+          </ul>
+        </div>
+
+
+      </div>
+      <!--header-inner -->
+
+      <!-- header end -->
+    </header>
+
+    <div class="container sub">
+        <div class="section travel-wrap">
+
+        01.유저페이지
+        회원가입 기능
+        - 회원가입 유효성검사
+        - 회원아이디 중복검사
+        - 네이버이메일 인증번호
+           - 회원가입 페이지에서 자바스크립트 ajax로 설정 후 컨트롤러에 데이터값 받은거  난수생성으로 콘솔창으로 띄우고 이메일로 보내서 인증번호 보내기 
+        로그인기능
+        - 인터셉터로 어드민 계정으로만 로그인페이지 진입
+        - 일반 로그인시 어드민페이지로 이동시 접근제한입니다 문구출력후 메인으로 이동
+        - 비로그인시 로그인 페이지이동
+    
+        카카오로그인 api구현
+        문의하기기능
+        - 로그인하지않으면 글 권한 없음
+        - 로그인정보없으면 로그인창으로 리다이렉트
+
+        02.어드민페이지
+        숙소 등록페이지
+        숙소 수정페이지
+        숙소 삭제페이지
+        
+        ERD 연관관계
+
+<img src="/images/project/ERD.png" alt="">
+
+
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="inner">
+          <div class="footer-wrap">
+            <ul class="">
+              <li>
+                <a class="" lang="en" href="">
+                  <i>💌</i> peekaboo32@naver.com
+                </a>
+              </li>
+              <li>
+                <a class="" lang="en" href="">
+                  <i>📱</i> 010 8635 0281
+                </a>
+              </li>
+              <li class="">
+                <a href="https://velog.io/@angela_/series" target="_blank" lang="en">
+                  <i>📚</i>Blog
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/SUJINJEONG012" target="_blank" lang="en">
+                  <i>🐱</i>Github
+                </a>
+              </li>
+            </ul>
+            <p class="footer-copy" lang="en">
+              © 2024 JEONGSUJIN PORTFOLIO
+            </p>
+          </div>
+  
+        </div>
+  
+      </footer>
+</div>
+</body>
+</html>

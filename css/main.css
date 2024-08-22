@@ -5,10 +5,18 @@
 .container {
   overflow: hidden;
   position: relative;
-
-
 }
-
+/* .container.sub{
+max-width: 1400px;
+    margin: 10rem auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(80, 80, 80, 0.1);
+    padding: 70px;
+    min-height: 600px;
+    overflow: hidden;
+  } */
+  .container.sub{background-color: #eef1f5;} 
 .intro-wrap {
   position: relative;
 }
@@ -256,15 +264,15 @@
 }
 
 .projects .title-wrap .point {
-
   display: inline-block;
-
   transform: scale(-1);
   font-size: 70px;
-
 }
-
-.projects .title-wrap>p {}
+.projects .title-wrap .basic-md{
+display: inline-block;
+font-size: 47px;
+padding: 34px 15px;
+}
 
 .tagline {
   position: absolute;
@@ -290,9 +298,13 @@
 
 .projects-list {
   display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: center;
 }
-
-
+.projects-list >div{
+flex: 1 1 30%;
+}
 .projects-item {
   position: relative;
   margin-right: 1%;
