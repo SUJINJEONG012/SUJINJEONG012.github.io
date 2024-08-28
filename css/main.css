@@ -300,11 +300,18 @@ padding: 34px 15px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  align-content: center;
+  align-items: center;
 }
 .projects-list >div{
 flex: 1 1 30%;
 }
+
+/* .projects-list.first > div.pro_img:nth-child(1){flex: 6;}
+.projects-list.first > div:nth-child(2) {flex: 4;}
+.projects-list.second > div.pro_img:nth-child(2){flex: 6;}
+.projects-list.second > div:nth-child(1) {flex: 4;} */
+
+
 .projects-item {
   position: relative;
   margin-right: 1%;
