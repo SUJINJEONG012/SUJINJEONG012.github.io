@@ -95,7 +95,7 @@ input:-webkit-autofill:active {
 .contact-item input {
   width: 100%;
   color: #fff;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #fff !important;
   height: 50px;
   ;
 }
